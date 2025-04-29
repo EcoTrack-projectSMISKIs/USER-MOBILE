@@ -1,0 +1,1 @@
+ /Users/luislaguardia/Downloads/EcoTrack-Mobile-updated-folder-structure/frontend/.dart_tool/flutter_build/e03d83c61fb73b455a1308a33595ddf7/native_assets.yaml: 
