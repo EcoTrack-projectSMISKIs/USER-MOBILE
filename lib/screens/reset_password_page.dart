@@ -19,9 +19,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
   String newPassword = '';
   bool obscure = true;
 
-  Future<void> resetPassword() async {
-    final url = Uri.parse('${dotenv.env['BASE_URL']}/api/auth/mobile/reset-password');
+Future<void> resetPassword() async {
+  final url = Uri.parse('${dotenv.env['BASE_URL']}/api/auth/mobile/reset-password');
 
+  try {
     final response = await http.post(
       url,
       headers: {"Content-Type": "application/json"},
@@ -33,17 +34,28 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
     );
 
     final resData = jsonDecode(response.body);
+
     if (response.statusCode == 200) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(resData['msg'])));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(resData['msg'] ?? "Password reset successful")),
+      );
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => const LoginPage()),
         (route) => false,
       );
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(resData['msg'] ?? "Reset failed")));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(resData['msg'] ?? "Reset failed")),
+      );
     }
+  } catch (e) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text("Something went wrong. Please try again.")),
+    );
+    print("Reset password error: $e");
   }
+}
 
   @override
   Widget build(BuildContext context) {
