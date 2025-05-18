@@ -1,0 +1,32 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:1:1-9:12
+	package
+		INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:3:5-75
+	android:name
+		ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:3:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:5:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml:8:22-76
+uses-sdk
+INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ma.darlenea.arellano/.pub-cache/hosted/pub.dev/wifi_scan-0.4.1+2/android/src/main/AndroidManifest.xml

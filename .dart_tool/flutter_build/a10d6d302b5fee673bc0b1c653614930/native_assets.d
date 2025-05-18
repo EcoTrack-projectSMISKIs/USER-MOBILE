@@ -1,0 +1,1 @@
+ /Users/ma.darlenea.arellano/Desktop/EcoTrack\ IoT/mobile\ from\ repo/USER-MOBILE-changes/.dart_tool/flutter_build/a10d6d302b5fee673bc0b1c653614930/native_assets.yaml: 

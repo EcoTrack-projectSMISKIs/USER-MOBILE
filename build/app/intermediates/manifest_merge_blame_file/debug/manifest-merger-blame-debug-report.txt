@@ -1,0 +1,471 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ecotrack_mobile"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:19:5-67
+15-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:19:22-64
+16    <!-- Location permissions -->
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:5:5-79
+17-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:5:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- WiFi permissions -->
+18-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:6:5-81
+18-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:6:22-78
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:9:5-76
+19-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:9:22-73
+20    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+20-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:10:5-76
+20-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:10:22-73
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:11:5-79
+21-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:11:22-76
+22    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- For Android 12+ -->
+22-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:12:5-79
+22-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:12:22-76
+23    <uses-permission
+23-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:15:5-16:71
+24        android:name="android.permission.NEARBY_WIFI_DEVICES"
+24-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:15:22-75
+25        android:usesPermissionFlags="neverForLocation" /> <!-- Feature declarations -->
+25-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:16:22-68
+26    <uses-feature android:name="android.hardware.wifi" />
+26-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:22:5-58
+26-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:22:19-55
+27    <uses-feature
+27-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:23:5-86
+28        android:name="android.hardware.location"
+28-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:23:19-59
+29        android:required="true" />
+29-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:23:60-83
+30    <!--
+31 Required to query activities that can process text, see:
+32         https://developer.android.com/training/package-visibility and
+33         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+34
+35         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+36    -->
+37    <queries>
+37-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:66:5-71:15
+38        <intent>
+38-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:67:9-70:18
+39            <action android:name="android.intent.action.PROCESS_TEXT" />
+39-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:68:13-72
+39-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:68:21-70
+40
+41            <data android:mimeType="text/plain" />
+41-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:69:13-50
+41-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:69:19-48
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+45-->[:wifi_iot] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/wifi_iot/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-73
+45-->[:wifi_iot] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/wifi_iot/intermediates/merged_manifest/debug/AndroidManifest.xml:17:22-70
+46    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+46-->[com.google.android.recaptcha:recaptcha:18.5.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/1539a3bf1924c4df760961361d5dde01/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:5-98
+46-->[com.google.android.recaptcha:recaptcha:18.5.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/1539a3bf1924c4df760961361d5dde01/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:22-95
+47
+48    <permission
+48-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+49        android:name="com.example.ecotrack_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.example.ecotrack_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+53
+54    <application
+55        android:name="android.app.Application"
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.13.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/56171c67d3b3b7353fd1934980ff2166/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+57        android:debuggable="true"
+58        android:extractNativeLibs="false"
+59        android:icon="@mipmap/ic_launcher"
+60        android:label="ecotrack_mobile"
+61        android:requestLegacyExternalStorage="true"
+62        android:usesCleartextTraffic="true" >
+63        <activity
+64            android:name="com.example.ecotrack_mobile.MainActivity"
+65            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+66            android:exported="true"
+67            android:hardwareAccelerated="true"
+68            android:launchMode="singleTop"
+69            android:taskAffinity=""
+70            android:theme="@style/LaunchTheme"
+71            android:windowSoftInputMode="adjustResize" >
+72
+73            <!--
+74                 Specifies an Android theme to apply to this Activity as soon as
+75                 the Android process has started. This theme is visible to the user
+76                 while the Flutter UI initializes. After that, this theme continues
+77                 to determine the Window background behind the Flutter UI.
+78            -->
+79            <meta-data
+80                android:name="io.flutter.embedding.android.NormalTheme"
+81                android:resource="@style/NormalTheme" />
+82
+83            <intent-filter>
+84                <action android:name="android.intent.action.MAIN" />
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+87            </intent-filter>
+88        </activity>
+89        <!--
+90             Don't delete the meta-data below.
+91             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+92        -->
+93        <meta-data
+94            android:name="flutterEmbedding"
+95            android:value="2" />
+96
+97        <uses-library
+98            android:name="org.apache.http.legacy"
+99            android:required="false" />
+100
+101        <service
+101-->[:firebase_auth] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:firebase_auth] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:68:13-37
+105            <meta-data
+105-->[:firebase_auth] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+106-->[:firebase_auth] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_auth] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[:firebase_core] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:69:13-71:85
+112                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+112-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:70:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:71:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/182bf3b5a0ba944c2c382fc137302632/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+115                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+115-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/182bf3b5a0ba944c2c382fc137302632/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/182bf3b5a0ba944c2c382fc137302632/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+118                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+118-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+120        </service>
+121
+122        <provider
+122-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+123            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+123-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+124            android:authorities="com.example.ecotrack_mobile.flutter.image_provider"
+124-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+125            android:exported="false"
+125-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+126            android:grantUriPermissions="true" >
+126-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+127            <meta-data
+127-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+128                android:name="android.support.FILE_PROVIDER_PATHS"
+128-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+129                android:resource="@xml/flutter_image_picker_file_paths" />
+129-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
+130        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+131        <service
+131-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
+132            android:name="com.google.android.gms.metadata.ModuleDependencies"
+132-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+133            android:enabled="false"
+133-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+134            android:exported="false" >
+134-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+135            <intent-filter>
+135-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+136                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+136-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+136-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+137            </intent-filter>
+138
+139            <meta-data
+139-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+140                android:name="photopicker_activity:0:required"
+140-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+141                android:value="" />
+141-->[:image_picker_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+142        </service>
+143        <service
+143-->[:geolocator_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:56
+144            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+144-->[:geolocator_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-77
+145            android:enabled="true"
+145-->[:geolocator_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-35
+146            android:exported="false"
+146-->[:geolocator_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+147            android:foregroundServiceType="location" />
+147-->[:geolocator_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-53
+148
+149        <activity
+149-->[:url_launcher_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-11:74
+150            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+150-->[:url_launcher_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-74
+151            android:exported="false"
+151-->[:url_launcher_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-37
+152            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+152-->[:url_launcher_android] /Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-71
+153        <activity
+153-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:29:9-46:20
+154            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+154-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:30:13-80
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:31:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:32:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:33:13-44
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+158-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:34:13-72
+159            <intent-filter>
+159-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:35:13-45:29
+160                <action android:name="android.intent.action.VIEW" />
+160-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+160-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+161
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+162-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+163                <category android:name="android.intent.category.BROWSABLE" />
+163-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+163-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+164
+165                <data
+165-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:69:13-50
+166                    android:host="firebase.auth"
+167                    android:path="/"
+168                    android:scheme="genericidp" />
+169            </intent-filter>
+170        </activity>
+171        <activity
+171-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:47:9-64:20
+172            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+172-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:48:13-79
+173            android:excludeFromRecents="true"
+173-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:49:13-46
+174            android:exported="true"
+174-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:50:13-36
+175            android:launchMode="singleTask"
+175-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:51:13-44
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+176-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:52:13-72
+177            <intent-filter>
+177-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:53:13-63:29
+178                <action android:name="android.intent.action.VIEW" />
+178-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
+178-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
+179
+180                <category android:name="android.intent.category.DEFAULT" />
+180-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
+180-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
+181                <category android:name="android.intent.category.BROWSABLE" />
+181-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
+181-->[com.google.firebase:firebase-auth:23.1.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/e1c305b3456e87766b70e8ea963be4ba/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
+182
+183                <data
+183-->/Users/ma.darlenea.arellano/Desktop/EcoTrack IoT/mobile from repo/USER-MOBILE-changes/android/app/src/main/AndroidManifest.xml:69:13-50
+184                    android:host="firebase.auth"
+185                    android:path="/"
+186                    android:scheme="recaptcha" />
+187            </intent-filter>
+188        </activity>
+189
+190        <service
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+191            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+192            android:enabled="true"
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+193            android:exported="false" >
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+194            <meta-data
+194-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+195                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+195-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+196                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+197        </service>
+198
+199        <activity
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+200            android:name="androidx.credentials.playservices.HiddenActivity"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+201            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+202            android:enabled="true"
+202-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+203            android:exported="false"
+203-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+204            android:fitsSystemWindows="true"
+204-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+205            android:theme="@style/Theme.Hidden" >
+205-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/9363d024e9e8d23de49e71898d16dba1/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+206        </activity>
+207        <activity
+207-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+208            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+208-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+209            android:excludeFromRecents="true"
+209-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+211            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+211-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+212        <!--
+213            Service handling Google Sign-In user revocation. For apps that do not integrate with
+214            Google Sign-In, this service will never be started.
+215        -->
+216        <service
+216-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+217            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+217-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+218            android:exported="true"
+218-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+219            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+219-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+220            android:visibleToInstantApps="true" />
+220-->[com.google.android.gms:play-services-auth:20.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/818e3920335537a6945e0ce8f16ed3e0/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+221
+222        <activity
+222-->[com.google.android.gms:play-services-base:18.3.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/0bd433b9660a07d88dd3b2b440365e1f/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+223            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+223-->[com.google.android.gms:play-services-base:18.3.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/0bd433b9660a07d88dd3b2b440365e1f/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+224            android:exported="false"
+224-->[com.google.android.gms:play-services-base:18.3.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/0bd433b9660a07d88dd3b2b440365e1f/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+225-->[com.google.android.gms:play-services-base:18.3.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/0bd433b9660a07d88dd3b2b440365e1f/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+226
+227        <provider
+227-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+228            android:name="com.google.firebase.provider.FirebaseInitProvider"
+228-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+229            android:authorities="com.example.ecotrack_mobile.firebaseinitprovider"
+229-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+230            android:directBootAware="true"
+230-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+231            android:exported="false"
+231-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+232            android:initOrder="100" />
+232-->[com.google.firebase:firebase-common:21.0.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/7fa71276d4cf118cdc9be21a2841c29b/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+233
+234        <uses-library
+234-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+235            android:name="androidx.window.extensions"
+235-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+236            android:required="false" />
+236-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+237        <uses-library
+237-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+238            android:name="androidx.window.sidecar"
+238-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+239            android:required="false" />
+239-->[androidx.window:window:1.2.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/292905771901ff1a1a5d0cce8f8a80b8/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+240
+241        <meta-data
+241-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/fb05ae390460bf4871e715fab7cec08b/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+242            android:name="com.google.android.gms.version"
+242-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/fb05ae390460bf4871e715fab7cec08b/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+243            android:value="@integer/google_play_services_version" />
+243-->[com.google.android.gms:play-services-basement:18.4.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/fb05ae390460bf4871e715fab7cec08b/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+244
+245        <provider
+245-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+246            android:name="androidx.startup.InitializationProvider"
+246-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+247            android:authorities="com.example.ecotrack_mobile.androidx-startup"
+247-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+248            android:exported="false" >
+248-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+249            <meta-data
+249-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+250                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+250-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+251                android:value="androidx.startup" />
+251-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/d275aa26cf92d4ea8837ac1580be80ea/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+252            <meta-data
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+253                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+254                android:value="androidx.startup" />
+254-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+255        </provider>
+256
+257        <receiver
+257-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+258            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+259            android:directBootAware="false"
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+260            android:enabled="true"
+260-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+261            android:exported="true"
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+262            android:permission="android.permission.DUMP" >
+262-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+263            <intent-filter>
+263-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+264                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+264-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+264-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+265            </intent-filter>
+266            <intent-filter>
+266-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+267                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+267-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+267-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+268            </intent-filter>
+269            <intent-filter>
+269-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+270                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+270-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+270-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+271            </intent-filter>
+272            <intent-filter>
+272-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+273                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+273-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+273-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/8d6188edf8cdaf48e7eed4779820c1cb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+274            </intent-filter>
+275        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+276        <activity
+276-->[com.google.android.play:core-common:2.0.3] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/a740912f2bd60866d76168005e3f688b/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+277            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+277-->[com.google.android.play:core-common:2.0.3] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/a740912f2bd60866d76168005e3f688b/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+278            android:exported="false"
+278-->[com.google.android.play:core-common:2.0.3] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/a740912f2bd60866d76168005e3f688b/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+279            android:stateNotNeeded="true"
+279-->[com.google.android.play:core-common:2.0.3] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/a740912f2bd60866d76168005e3f688b/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+280            android:theme="@style/Theme.PlayCore.Transparent" />
+280-->[com.google.android.play:core-common:2.0.3] /Users/ma.darlenea.arellano/.gradle/caches/transforms-3/a740912f2bd60866d76168005e3f688b/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+281    </application>
+282
+283</manifest>
